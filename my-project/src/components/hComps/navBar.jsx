@@ -1,11 +1,72 @@
 import React from "react";
+import { AiOutlineMenu } from "react-icons/ai";
 
-const navBar = () => {
+const Navbar = () => {
   return (
-    <nav>
-      <div></div>
+    <nav className="px-16 py-6 kflex text-white text-2xl font-spaceGrotesk">
+      <div className="kflex gap-[39.8px]">
+        <div className="lg:hidden relative">
+          <button className="dropdown-button onClick={toggleBtn}">
+            <AiOutlineMenu />
+          </button>
+
+          <ul
+            className="dropdown-menu hidden flex-col gap-[39.8px] absolute"
+            id="hiddenList"
+          >
+            <a href="">
+              <li>Products</li>
+            </a>
+            <a href="">
+              <li>Subcription</li>
+            </a>
+            <a href="">
+              <li>Why Nura?</li>
+            </a>
+            <a href="">
+              <li>Support</li>
+            </a>
+          </ul>
+        </div>
+
+        <img
+          className="h-[22.203px]"
+          src="https://res.cloudinary.com/duxfzk6uy/image/upload/v1688476859/Kanoms/nuraheaderlogo_dlutbc.png"
+          alt="NuraSound"
+        />
+
+        <ul className="hidden lg:kflex gap-[39.8px]">
+          <a href="">
+            <li>Products</li>
+          </a>
+          <a href="">
+            <li>Subcription</li>
+          </a>
+          <a href="">
+            <li>Why Nura?</li>
+          </a>
+          <a href="">
+            <li>Support</li>
+          </a>
+        </ul>
+      </div>
+
+      <div className="flex gap-2">
+        <span>Cart</span>
+        <span className="font-inter text-base align-top">(0)</span>
+      </div>
     </nav>
   );
 };
 
-export default navBar;
+document.addEventListener("DOMContentLoaded", function () {
+  const dropdownButton = document.querySelector(".dropdown-button");
+  const dropdownMenu = document.querySelector(".dropdown-menu");
+
+  dropdownButton.addEventListener("click", function () {
+    dropdownMenu.style.display =
+      dropdownMenu.style.display === "flex" ? "none" : "flex";
+  });
+});
+
+export default Navbar;
