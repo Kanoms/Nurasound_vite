@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,400;0,500;1,700&family=Inter:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -9,8 +9,12 @@
     @apply flex justify-between items-center;
   }
 
+  .kflex2 {
+    @apply flex justify-center items-center;
+  }
+
   .wbtn {
-    @apply inline-flex h-[50px] py-3 pr-[18px] pl-6 justify-end items-start gap-[9.8] flex-shrink-0 rounded-[50px] bg-white text-black;
+    @apply flex h-[50px] py-3 pr-[18px] pl-6 justify-center items-center gap-[9.8px] flex-shrink-0 rounded-[50px] bg-white text-black text-center;
   }
 
   .blbtn {
@@ -28,4 +32,8 @@
   .hdbgimg {
     @apply bg-[url("https://res.cloudinary.com/duxfzk6uy/image/upload/v1688476862/Kanoms/Header_dppbon.png")];
   }
+}
+
+body {
+  background-color: #171717;
 }

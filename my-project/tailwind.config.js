@@ -5,11 +5,13 @@ export default {
     extend: {
       fontFamily: {
         spaceGrotesk: ["Space Grotesk", "sans-serif"],
-        inter: ["Inter", "sans-serif"]
+        inter: ["Inter", "sans-serif"],
+        baiJamjuree: ["Bai Jamjuree", "sans-serif"],
       },
 
       colors: {
         nBlue: "#3333F5",
+        nGrey: "#171717",
       },
     },
   },

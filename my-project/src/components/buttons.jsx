@@ -1,7 +1,8 @@
 import PropTypes from "prop-types";
+import { BsArrowRight } from "react-icons/bs";
 
 const Button = ({ text, className }) => {
-  return <button className={`${className}`}>{text}</button>;
+  return <button className={`${className}`}>{text} <BsArrowRight/></button>;
 };
 
 Button.propTypes = {
