@@ -1,7 +1,7 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
+import header from "./components/hComps/header"
+import main from "./components/hComps/main"
+import footer from "./components/hComps/footer"
 
 function App() {
   const [count, setCount] = useState(0);
