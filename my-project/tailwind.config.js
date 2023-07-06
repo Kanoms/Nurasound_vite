@@ -23,6 +23,7 @@ export default {
         n4: "repeat(4, 313px)",
         n2: "repeat(2, 313px)",
         n1: "repeat(1, 313px)",
+        ft1: "30% 70%",
       },
     },
   },

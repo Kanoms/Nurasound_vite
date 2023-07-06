@@ -40,9 +40,18 @@
   .guybg {
     @apply bg-[url("https://res.cloudinary.com/duxfzk6uy/image/upload/v1688476860/Kanoms/guy_m5nrf1.png")] w-full h-auto bg-no-repeat bg-cover bg-center;
   }
+
+  .special {
+    @apply text-[#737373] text-base font-spaceGrotesk uppercase mb-1;
+  }
 }
 
 body {
   background-color: #171717;
   overflow-x: hidden;
+}
+
+a:hover {
+  text-decoration: underline;
+  transition: 0.3s;
 }

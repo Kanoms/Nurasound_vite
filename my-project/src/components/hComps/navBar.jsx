@@ -1,5 +1,6 @@
 import React from "react";
 import { AiOutlineMenu } from "react-icons/ai";
+import NavList from "../lists";
 
 const Navbar = () => {
   return (
@@ -9,23 +10,7 @@ const Navbar = () => {
           <AiOutlineMenu />
         </button>
 
-        <ul
-          className="dropdown-menu hidden flex-col gap-5 absolute bg-nGrey rounded-2xl px-3 py-2"
-          id="hiddenList"
-        >
-          <a className="hover:underline" href="">
-            <li>Products</li>
-          </a>
-          <a className="hover:underline" href="">
-            <li>Subcription</li>
-          </a>
-          <a className="hover:underline" href="">
-            <li>Why Nura?</li>
-          </a>
-          <a className="hover:underline" href="">
-            <li>Support</li>
-          </a>
-        </ul>
+        <NavList className="dropdown-menu hidden flex-col gap-5 absolute bg-nGrey rounded-2xl px-3 py-2" />
       </div>
       <div className="kflex gap-4 lg:gap-[39.8px]">
         <img
@@ -34,20 +19,7 @@ const Navbar = () => {
           alt="NuraSound"
         />
 
-        <ul className="hidden lg:kflex gap-[39.8px]">
-          <a href="">
-            <li>Products</li>
-          </a>
-          <a href="">
-            <li>Subcription</li>
-          </a>
-          <a href="">
-            <li>Why Nura?</li>
-          </a>
-          <a href="">
-            <li>Support</li>
-          </a>
-        </ul>
+        <NavList className="hidden lg:kflex gap-[39.8px]" />
       </div>
 
       <div className="flex gap-2">
