@@ -73,7 +73,7 @@ const Main = () => {
       </section>
       <section>
         <div className="bg-gradient-to-r from-[#3633F5] via-[#3381F5] to-[#3381F5] relative flex flex-col items-center lg:flex-row">
-          <div className="lg:absolute top-0">
+          <div className="lg:absolute top-0 z-[999]">
             <img
               className="lg:h-[120vh] xl:h-auto"
               src="https://res.cloudinary.com/duxfzk6uy/image/upload/v1688476862/Kanoms/phone_nhrwe0.png"
@@ -87,12 +87,14 @@ const Main = () => {
 
             <p className="text-2xl lg:text-2xl md:text-[33px] md:leading-[37.95px] xl:text-[33px] xl:leading-[37.95px]">
               Normal hearing varies significantly from person to person, and
-              these variations make a big difference to how you experience
-              music.
+              these variations make a{" "}
+              <span className="text-nGreen">big difference</span> to how you
+              experience music.
             </p>
 
             <p className="text-2xl lg:text-2xl md:text-[33px] md:leading-[37.95px] xl:text-[33px] xl:leading-[37.95px]">
-              The first time you use Nura earbuds, they measure your hearing to
+              The first time you use Nura earbuds, they{" "}
+              <span className="text-nGreen">measure your hearing</span> to
               create your personalised hearing profile.
             </p>
 
@@ -100,7 +102,27 @@ const Main = () => {
           </div>
         </div>
       </section>
-      <section></section>
+      <section>
+        <div>
+          <div className="chickenbg relative">
+            <div className="flex flex-col text-center md:text-left pt-[187px] md:absolute md:w-[50%] left-[50vw] top-[187px] text-white px-3 lg:px-16 gap-5 md:gap-8 xl:gap-5">
+              <h2 className="text-6xl md:text-6xl xl:text-[94px] xl:leading-[94px]">
+                Play from any device.
+              </h2>
+
+              <p className="text-2xl md:text-2xl xl:text-[33px] xl:leading-[37.95px]">
+                Your hearing profile is stored on the earbuds, and is applied to
+                whatever you listen to, on any device.
+              </p>
+
+              <p className="text-2xl md:text-2xl xl:text-[33px] xl:leading-[37.95px]">
+                Use the Nura app to create a hearing profile, configure touch
+                buttons, adjust immersion mode and more.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
       <section></section>
       <section></section>
       <section></section>
