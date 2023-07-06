@@ -1,10 +1,18 @@
 import PropTypes from "prop-types";
 import Button from "./buttons";
 
-const discount = ({ percentOff, image, imageDesc, product, oldPrice, newPrice }) => {
+const Discount = ({
+  percentOff,
+  image,
+  imageDesc,
+  product,
+  className,
+  oldPrice,
+  newPrice,
+}) => {
   return (
-    <div className="relative kflex2 flex-col">
-      <div className="absolute">
+    <div className="relative kflex flex-col bg-offWhite rounded-[20px] h-[494.656px] pb-[30px]">
+      <div className="absolute left-[25px] top-[29.67px] z-[999]">
         <div className="w-24 h-24">
           <svg
             viewBox="0 0 94 95"
@@ -27,7 +35,7 @@ const discount = ({ percentOff, image, imageDesc, product, oldPrice, newPrice })
                 fill="url(#paint0_linear_1_1236)"
                 className="font-semibold font-spaceGrotesk"
               >
-                {percentOff}
+                {percentOff}%
               </text>
               <text
                 x="50%"
@@ -83,24 +91,33 @@ const discount = ({ percentOff, image, imageDesc, product, oldPrice, newPrice })
         <img src={image} alt={imageDesc} />
       </div>
 
-      <h3>{product} </h3>
+      <h3
+        className={`font-spaceGrotesk text-4xl mt-[17px] mb-[11px] text-black font-medium tracking-[-1.08px] ${className}`}
+      >
+        {product}
+      </h3>
 
-      <div>
-        <span>{oldPrice} </span>
-        <span>{newPrice} </span>
+      <div className="kflex2 gap-[4.5px] font-baiJamjuree font-semibold relative">
+        <span className="text-lGreen relative">
+          <span className="before:block before:content-[''] before:absolute before:w-full before:h-[2px] before:bg-[#ACACAC] before:top-[9px]"></span>
+          ${oldPrice}
+        </span>
+
+        <span>${newPrice} </span>
       </div>
 
-      <Button text="SHOP NOW" />
+      <Button text="SHOP NOW" className="blbtn" />
     </div>
   );
 };
 
-discount.propTypes = {
+Discount.propTypes = {
   percentOff: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   product: PropTypes.string.isRequired,
+  className: PropTypes.string.isRequired,
   oldPrice: PropTypes.string.isRequired,
   newPrice: PropTypes.string.isRequired,
 };
 
-export default discount;
+export default Discount;

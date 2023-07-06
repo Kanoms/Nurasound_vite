@@ -1,7 +1,16 @@
 import React from "react";
 import Button from "../buttons";
+import Discount from "../discount";
 
 const Main = () => {
+  const nuraPhone =
+    "https://res.cloudinary.com/duxfzk6uy/image/upload/v1688476860/Kanoms/Nuraphone_jke71u.png";
+  const nuraTrue =
+    "https://res.cloudinary.com/duxfzk6uy/image/upload/v1688476861/Kanoms/NuraTrue_upst6g.png";
+  const nuraBuds =
+    "https://res.cloudinary.com/duxfzk6uy/image/upload/v1688476859/Kanoms/NuraBuds_s0jhqc.png";
+  const nuraBluetooth =
+    "https://res.cloudinary.com/duxfzk6uy/image/upload/v1688476859/Kanoms/NuraBluetooth_hakche.png";
   return (
     <main>
       <section>
@@ -17,11 +26,48 @@ const Main = () => {
             />
           </div>
 
-          <div className="grid grid-rows-4 grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-[20px] xl:grid-cols-4 xl:grid-rows-1 [&>div]:bg-white [&>div]:h-[494.656px] [&>div]:rounded-[20px] justify-center items-center">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+          <div className="grid grid-rows-4 grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-[20px] xl:grid-cols-4 xl:grid-rows-1 justify-center items-center">
+            <div>
+              <Discount
+                percentOff="25"
+                image={nuraPhone}
+                imageDesc={"NuraPhone"}
+                product="Nuraphone"
+                oldPrice="399"
+                newPrice="299.25"
+              />
+            </div>
+            <div>
+              <Discount
+                percentOff="30"
+                image={nuraTrue}
+                imageDesc={"NuraTrue"}
+                product="NuraTrue"
+                oldPrice="199.99"
+                newPrice="139.99"
+              />
+            </div>
+            <div>
+              <Discount
+                percentOff="25"
+                image={nuraBuds}
+                imageDesc={"NuraBuds 2"}
+                product="NuraBuds 2"
+                oldPrice="119"
+                newPrice="89.25"
+              />
+            </div>
+            <div>
+              <Discount
+                percentOff="25"
+                image={nuraBluetooth}
+                imageDesc={"Nura Bluetooth 5.3 Audio Transmitter"}
+                product="Nura Bluetooth® 5.3 Audio Transmitter"
+                className="text-[28px] tracking-[-0.84px] leading-[28px] mt-[18px] mb-[2px] text-center"
+                oldPrice="59"
+                newPrice="44.25"
+              />
+            </div>
           </div>
         </div>
       </section>
