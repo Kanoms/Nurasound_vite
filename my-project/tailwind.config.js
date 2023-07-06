@@ -15,6 +15,7 @@ export default {
         nGreen: "#7DFB5D",
         offWhite: "#E5E5E5",
         lGreen: "#ACACAC",
+        lGrey: "#E0E0E0",
       },
 
       gridTemplateColumns: {
