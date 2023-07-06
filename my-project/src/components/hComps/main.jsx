@@ -73,7 +73,7 @@ const Main = () => {
       </section>
       <section>
         <div className="bg-gradient-to-r from-[#3633F5] via-[#3381F5] to-[#3381F5] relative flex flex-col items-center lg:flex-row">
-          <div className="lg:absolute top-0 z-[999]">
+          <div className="lg:absolute top-0 z-[999] pt-16 lg:pt-0">
             <img
               className="lg:h-[120vh] xl:h-auto"
               src="https://res.cloudinary.com/duxfzk6uy/image/upload/v1688476862/Kanoms/phone_nhrwe0.png"
@@ -105,14 +105,16 @@ const Main = () => {
       <section>
         <div>
           <div className="chickenbg relative">
-            <div className="flex flex-col text-center md:text-left pt-[187px] md:absolute md:w-[50%] left-[50vw] top-[187px] text-white px-3 lg:px-16 gap-5 md:gap-8 xl:gap-5">
+            <div className="flex flex-col text-center md:text-left pt-[187px] md:pt-0 md:absolute md:w-[50%] left-[50vw] top-[187px] text-white px-3 lg:px-16 gap-5 md:gap-8 xl:gap-5 font-spaceGrotesk">
               <h2 className="text-6xl md:text-6xl xl:text-[94px] xl:leading-[94px]">
                 Play from any device.
               </h2>
 
               <p className="text-2xl md:text-2xl xl:text-[33px] xl:leading-[37.95px]">
-                Your hearing profile is stored on the earbuds, and is applied to
-                whatever you listen to, on any device.
+                Your hearing profile is{" "}
+                <span className="text-nGreen">stored on the earbuds</span>, and
+                is applied to whatever you listen to,{" "}
+                <span className="text-nGreen">on any device</span>.
               </p>
 
               <p className="text-2xl md:text-2xl xl:text-[33px] xl:leading-[37.95px]">
@@ -123,7 +125,25 @@ const Main = () => {
           </div>
         </div>
       </section>
-      <section></section>
+      <section>
+        <div>
+          <div className="guybg py-[200px] text-white font-spaceGrotesk kflex2 flex-col">
+            <h2 className="text-5xl md:text-7xl mb-5 text-center">
+              A sound subscription
+            </h2>
+
+            <p className="text-2xl md:text-[33px] md:leading-[42.9px] text-center px-3 lg:w-[900px] lg:px-0">
+              Experience personalised sound across our devices on a low monthly
+              fee with NuraNow. Cancel anytime.
+            </p>
+
+            <Button
+              text="Discover NuraNow"
+              className="uppercase blbtn2 mt-10 text-base md:text-2xl"
+            />
+          </div>
+        </div>
+      </section>
       <section></section>
       <section></section>
     </main>

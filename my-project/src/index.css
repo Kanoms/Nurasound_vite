@@ -26,7 +26,7 @@
   }
 
   .blbtn2 {
-    @apply inline-flex py-3 justify-center items-center bg-nBlue text-white rounded-[32px] gap-[18.987px];
+    @apply flex pl-[35.19px] pr-[25.6px] py-3 justify-center items-center bg-nBlue text-white rounded-[32px] gap-[18.987px] font-inter;
   }
 
   .hdbgimg {
@@ -35,6 +35,10 @@
 
   .chickenbg {
     @apply bg-[url("https://res.cloudinary.com/duxfzk6uy/image/upload/v1688476863/Kanoms/chicken_up7nhe.png")] h-[877.625px] bg-no-repeat bg-center;
+  }
+
+  .guybg {
+    @apply bg-[url("https://res.cloudinary.com/duxfzk6uy/image/upload/v1688476860/Kanoms/guy_m5nrf1.png")] w-full h-auto bg-no-repeat bg-cover bg-center;
   }
 }
 
