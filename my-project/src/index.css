@@ -22,7 +22,7 @@
   }
 
   .tpbtn {
-    @apply flex w-[205.969px] py-[9px] px-[23px] justify-center items-center gap-[11.8px] rounded-[20px] border border-white text-white;
+    @apply flex w-max py-[9px] px-[23px] justify-center items-center gap-[11.8px] rounded-[20px] border border-white text-white font-inter text-[20px];
   }
 
   .blbtn2 {
@@ -31,14 +31,6 @@
 
   .hdbgimg {
     @apply bg-[url("https://res.cloudinary.com/duxfzk6uy/image/upload/v1688476862/Kanoms/Header_dppbon.png")];
-  }
-
-  .dscclass {
-    @apply font-spaceGrotesk text-4xl mt-[17px] mb-[11px] text-black font-medium tracking-[-1.08px];
-  }
-
-  .dscclass2 {
-    @apply font-spaceGrotesk text-4xl mt-[18px] mb-[2px] text-black font-medium tracking-[-1.08px];
   }
 }
 

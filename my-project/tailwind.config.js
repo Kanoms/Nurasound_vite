@@ -18,9 +18,9 @@ export default {
       },
 
       gridTemplateColumns: {
-        4: "repeat(4, 313px)",
-        2: "repeat(2, 313px)",
-        1: "repeat(1, 313px)",
+        n4: "repeat(4, 313px)",
+        n2: "repeat(2, 313px)",
+        n1: "repeat(1, 313px)",
       },
     },
   },

@@ -26,7 +26,7 @@ const Main = () => {
             />
           </div>
 
-          <div className="grid grid-rows-4 grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-[20px] xl:grid-cols-4 xl:grid-rows-1 justify-center items-center">
+          <div className="grid grid-rows-n4 grid-cols-n1 md:grid-cols-n2 md:grid-rows-2 gap-[20px] xl:grid-cols-n4 xl:grid-rows-1 justify-center items-center">
             <div>
               <Discount
                 percentOff="25"
@@ -71,7 +71,35 @@ const Main = () => {
           </div>
         </div>
       </section>
-      <section></section>
+      <section>
+        <div className="bg-gradient-to-r from-[#3633F5] via-[#3381F5] to-[#3381F5] relative flex flex-col items-center lg:flex-row">
+          <div className="lg:absolute top-0">
+            <img
+              className="lg:h-[120vh] xl:h-auto"
+              src="https://res.cloudinary.com/duxfzk6uy/image/upload/v1688476862/Kanoms/phone_nhrwe0.png"
+              alt=""
+            />
+          </div>
+          <div className="font-spaceGrotesk text-white py-16 lg:py-[200px] px-3 text-center lg:text-left md:px-10 lg:px-16 lg:ml-[50vw] flex flex-col items-center lg:items-start gap-[20px]">
+            <h2 className="text-6xl lg:text-6xl md:text-[94px] md:leading-[94px] xl:text-[94px] xl:leading-[94px]">
+              For your ears only.
+            </h2>
+
+            <p className="text-2xl lg:text-2xl md:text-[33px] md:leading-[37.95px] xl:text-[33px] xl:leading-[37.95px]">
+              Normal hearing varies significantly from person to person, and
+              these variations make a big difference to how you experience
+              music.
+            </p>
+
+            <p className="text-2xl lg:text-2xl md:text-[33px] md:leading-[37.95px] xl:text-[33px] xl:leading-[37.95px]">
+              The first time you use Nura earbuds, they measure your hearing to
+              create your personalised hearing profile.
+            </p>
+
+            <Button text="LEARN MORE" className="tpbtn" />
+          </div>
+        </div>
+      </section>
       <section></section>
       <section></section>
       <section></section>
