@@ -11,6 +11,53 @@ const Main = () => {
     "https://res.cloudinary.com/duxfzk6uy/image/upload/v1688476859/Kanoms/NuraBuds_s0jhqc.png";
   const nuraBluetooth =
     "https://res.cloudinary.com/duxfzk6uy/image/upload/v1688476859/Kanoms/NuraBluetooth_hakche.png";
+
+  //  BRANDS
+  const forbes =
+    "https://res.cloudinary.com/duxfzk6uy/image/upload/v1688673902/Kanoms/forbes.png";
+  const techJunkie =
+    "https://res.cloudinary.com/duxfzk6uy/image/upload/v1688673904/Kanoms/techjunkie.png";
+  const gq =
+    "https://res.cloudinary.com/duxfzk6uy/image/upload/v1688673905/Kanoms/gq.png";
+  const wsj =
+    "https://res.cloudinary.com/duxfzk6uy/image/upload/v1688673905/Kanoms/wallstreetjournal.png";
+  const engadget =
+    "https://res.cloudinary.com/duxfzk6uy/image/upload/v1688673905/Kanoms/engadget.png";
+  const trustedReviews =
+    "https://res.cloudinary.com/duxfzk6uy/image/upload/v1688673904/Kanoms/trustedreviews.png";
+  const ibt =
+    "https://res.cloudinary.com/duxfzk6uy/image/upload/v1688673904/Kanoms/internationalbusinesstimes.png";
+  const ft =
+    "https://res.cloudinary.com/duxfzk6uy/image/upload/v1688673904/Kanoms/financialtimes.png";
+  const tomsguide =
+    "https://res.cloudinary.com/duxfzk6uy/image/upload/v1688673904/Kanoms/tomsguide.png";
+  const digitalSpy =
+    "https://res.cloudinary.com/duxfzk6uy/image/upload/v1688673903/Kanoms/digitalspy.png";
+  const pitchFork =
+    "https://res.cloudinary.com/duxfzk6uy/image/upload/v1688673903/Kanoms/pitchfork.png";
+  const digitalTrends =
+    "https://res.cloudinary.com/duxfzk6uy/image/upload/v1688673903/Kanoms/digitaltrends.png";
+  const stuff =
+    "https://res.cloudinary.com/duxfzk6uy/image/upload/v1688673904/Kanoms/stuff.png";
+  const gizmodo =
+    "https://res.cloudinary.com/duxfzk6uy/image/upload/v1688673903/Kanoms/gizmodo.png";
+  const wired =
+    "https://res.cloudinary.com/duxfzk6uy/image/upload/v1688673902/Kanoms/wired.png";
+  const techRadar =
+    "https://res.cloudinary.com/duxfzk6uy/image/upload/v1688673903/Kanoms/techradar.png";
+  const tnw =
+    "https://res.cloudinary.com/duxfzk6uy/image/upload/v1688673902/Kanoms/thenextweb.png";
+  const broadSheet =
+    "https://res.cloudinary.com/duxfzk6uy/image/upload/v1688673902/Kanoms/broadsheet.png";
+  const unboxTherapy =
+    "https://res.cloudinary.com/duxfzk6uy/image/upload/v1688673902/Kanoms/unboxtherapy.png";
+  const tc =
+    "https://res.cloudinary.com/duxfzk6uy/image/upload/v1688673902/Kanoms/techcrunch.png";
+  const rollingStone =
+    "https://res.cloudinary.com/duxfzk6uy/image/upload/v1688673902/Kanoms/rollingstone.png";
+  const popsi =
+    "https://res.cloudinary.com/duxfzk6uy/image/upload/v1688673902/Kanoms/popsci.png";
+
   return (
     <main>
       <section>
@@ -165,7 +212,86 @@ const Main = () => {
           </div>
         </div>
       </section>
-      <section></section>
+      <section>
+        <div className="bg-kGrey py-16 md:py-32 kflex2 flex-col gap-12">
+          <div>
+            <h2 className="uppercase text-nGreen text-center font-spaceGrotesk text-2xl">
+              As featured in
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 items-center justify-center text-center gap-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
+            <div>
+              <img src={forbes} alt="Forbes" />
+            </div>
+            <div>
+              <img src={wired} alt="wired" />
+            </div>
+            <div>
+              <img src={techRadar} alt="Techradar" />
+            </div>
+            <div>
+              <img src={tc} alt="Techcrunch" />
+            </div>
+            <div>
+              <img src={pitchFork} alt="Pitchfork" />
+            </div>
+            <div>
+              <img src={rollingStone} alt="RollingStone" />
+            </div>
+            <div>
+              <img src={engadget} alt="Engadget" />
+            </div>
+            <div>
+              <img src={wsj} alt="Wall Street Journal" />
+            </div>
+            <div>
+              <img src={gq} alt="GQ" />
+            </div>
+            <div>
+              <img src={popsi} alt="Popsi" />
+            </div>
+            <div>
+              <img src={unboxTherapy} alt="Unbox Therapy" />
+            </div>
+            <div>
+              <img src={tnw} alt="The next web" />
+            </div>
+            <div>
+              <img src={ft} alt="Financial Times" />
+            </div>
+            <div>
+              <img src={gizmodo} alt="Gizmodo" />
+            </div>
+            <div>
+              <img src={stuff} alt="Stuff" />
+            </div>
+            <div>
+              <img src={digitalSpy} alt="Digital Spy" />
+            </div>
+            <div>
+              <img src={ibt} alt="International Business Times" />
+            </div>
+            <div>
+              <img src={digitalTrends} alt="Digital Trends" />
+            </div>
+            <div className="hidden xl:block"></div>
+            <div>
+              <img src={techJunkie} alt="TechJunkie" />
+            </div>
+            <div>
+              <img src={broadSheet} alt="BroadSheet" />
+            </div>
+            <div className="hidden lg:block xl:hidden"></div>
+            <div>
+              <img src={tomsguide} alt="Tom's guide" />
+            </div>
+            <div className="hidden md:block lg:hidden"></div>
+            <div>
+              <img src={trustedReviews} alt="Trusted Reviews" />
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 };
