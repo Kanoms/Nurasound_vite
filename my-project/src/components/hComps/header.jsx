@@ -4,7 +4,7 @@ import Button from "../buttons";
 
 const Header = () => {
   return (
-    <header className="hdbgimg bg-cover bg-centerbg-cover bg-center h-[100vh] w-[100vw]">
+    <header className="hdbgimg bg-cover bg-centerbg-cover bg-center h-full lg:h-[100vh] w-[100vw] pb-10 lg:pb-0">
       <Navbar />
 
       <div className="kflex2 flex-col bottom-0 mt-[50vh] text-white gap-8 text-center">
