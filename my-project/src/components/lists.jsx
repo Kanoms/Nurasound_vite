@@ -1,34 +1,12 @@
 import PropTypes from "prop-types";
-
-const listItem = [
-  {
-    id: 1,
-    linkText: "Products",
-  },
-  {
-    id: 2,
-    linkText: "Subcription",
-  },
-  {
-    id: 3,
-    linkText: "Why Nura?",
-  },
-  {
-    id: 4,
-    linkText: "Support",
-  },
-  {
-    id: 5,
-    linkText: "Login",
-  },
-];
+import listItem from "../data/listData";
 
 const NavList = ({ className }) => {
   return (
     <ul className={`${className}`}>
       {listItem.map((item) => {
         return (
-          <a key={item.id} href="">
+          <a key={item.id} href="#">
             <li>{item.linkText}</li>
           </a>
         );
