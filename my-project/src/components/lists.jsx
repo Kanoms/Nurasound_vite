@@ -1,27 +1,43 @@
-import React from "react";
 import PropTypes from "prop-types";
+
+const listItem = [
+  {
+    id: 1,
+    linkText: "Products",
+  },
+  {
+    id: 2,
+    linkText: "Subcription",
+  },
+  {
+    id: 3,
+    linkText: "Why Nura?",
+  },
+  {
+    id: 4,
+    linkText: "Support",
+  },
+  {
+    id: 5,
+    linkText: "Login",
+  },
+];
 
 const NavList = ({ className }) => {
   return (
     <ul className={`${className}`}>
-      <a href="">
-        <li>Products</li>
-      </a>
-      <a href="">
-        <li>Subcription</li>
-      </a>
-      <a href="">
-        <li>Why Nura?</li>
-      </a>
-      <a href="">
-        <li>Support</li>
-      </a>
+      {listItem.map((item) => {
+        return (
+          <a key={item.id} href="">
+            <li>{item.linkText}</li>
+          </a>
+        );
+      })}
     </ul>
   );
 };
-NavList.PropTypes = {
+NavList.propTypes = {
   className: PropTypes.string.isRequired,
 };
 
 export default NavList;
-

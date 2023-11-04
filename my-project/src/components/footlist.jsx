@@ -5,7 +5,7 @@ const Footlist = (props) => {
   const items = [];
   for (let i = 1; i <= 9; i++) {
     const itemKey = `item${i}`;
-    const itemClass = i === 1 ? "special" : ""; // Add a special class to item1
+    const itemClass = i === 1 ? "special" : "xshidden"; // Add a special class to item1
     items.push(
       <li key={itemKey} className={itemClass}>
         {props[itemKey]}

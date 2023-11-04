@@ -44,6 +44,10 @@
   .special {
     @apply text-[#737373] text-base font-spaceGrotesk uppercase mb-1;
   }
+
+  .xshidden {
+    @apply hidden sm:block;
+  }
 }
 
 body {
