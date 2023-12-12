@@ -6,7 +6,7 @@ const NavList = ({ className }) => {
     <ul className={`${className}`}>
       {listItem.map((item) => {
         return (
-          <a key={item.id} href="#">
+          <a key={item.id} href={item.linkPath}>
             <li>{item.linkText}</li>
           </a>
         );
